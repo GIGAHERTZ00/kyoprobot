@@ -56,6 +56,7 @@ def nextContests():
     if contest[0] is None:
       rtn1 = ("次のコンテストの情報は得られませんでした")
       rtn2 = ""
+      rtn3 = ""
       continue
     stoe = contest[0][1].timestamp() + datetime.datetime.strptime(contest[0][2], "%H:%M").timestamp()+2209021200
     rtn1 = ("次のコンテストは" + text + contest[0][0] + "です")
